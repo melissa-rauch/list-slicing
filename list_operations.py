@@ -181,19 +181,24 @@ def replace_middle(input_list):
 
 replace_middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
-# def delete_third_and_seventh(input_list):
-#     """Remove third and seventh elements of input_list and return nothing.
+def delete_third_and_seventh(input_list):
+    """Remove third and seventh elements of input_list and return nothing.
 
-#     For example:
+    For example:
 
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> delete_third_and_seventh(notes)
-#     >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
-#     True
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> delete_third_and_seventh(notes)
+    >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
+    True
 
-#     """
+    """
+    notes = input_list
+    notes[2:3] = []
+    notes[5:6] = []
+    
+    return
 
-#     pass
+delete_third_and_seventh(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'])
 
 
 # def delete_middle(input_list):
