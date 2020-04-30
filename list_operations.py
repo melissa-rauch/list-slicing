@@ -8,22 +8,18 @@ def head(input_list):
       >>> head(['Jan', 'Feb', 'Mar'])
       'Jan'
     """
-    return(input_list[0])
+    return input_list[0]
 
 head(['Jan', 'Feb', 'Mar'])
 
 def tail(input_list):
-    """Return a new list of all items, excluding the first item.
+    """Return a new list of all items, excluding the first item."""
+    new_list = []
+    new_list.append(input_list[1:3])
 
-    For example:
+    return new_list
 
-    >>> tail(['Jan', 'Feb', 'Mar'])
-    ['Feb', 'Mar']
-
-    """
-
-    return []
-
+tail(['Jan', 'Feb', 'Mar'])
 
 # def last(input_list):
 #     """Return the last item of the input list.
