@@ -141,20 +141,24 @@ replace_head([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
 
 
-# def replace_third_and_last(input_list):
-#     """Replace third and last elements of input_list with 37 and return nothing.
+def replace_third_and_last(input_list):
+    """Replace third and last elements of input_list with 37 and return nothing.
 
-#     For example:
+    For example:
 
-#     >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-#     >>> replace_third_and_last(multiples)
-#     >>> multiples == [0, 3, 37, 9, 12, 15, 18, 21, 24, 37]
-#     True
+    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    >>> replace_third_and_last(multiples)
+    >>> multiples == [0, 3, 37, 9, 12, 15, 18, 21, 24, 37]
+    True
 
-#     """
+    """
+    multiples = input_list
+    multiples[2:4] = [37]
+    multiples [:-2:-1] = [37]
 
-#     pass
-
+    return
+    # pass
+replace_third_and_last([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
 # def replace_middle(input_list):
 #     """Replace all elements of a list but the first two and last two with 42 and 37.
