@@ -201,22 +201,25 @@ def delete_third_and_seventh(input_list):
 delete_third_and_seventh(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'])
 
 
-# def delete_middle(input_list):
-#     """Remove all elements from input_list except the first two and last two.
+def delete_middle(input_list):
+    """Remove all elements from input_list except the first two and last two.
 
-#     Return nothing.
+    Return nothing.
 
-#     For example:
+    For example:
 
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> delete_middle(notes)
-#     >>> notes == ['Do', 'Re', 'Ti', 'Do']
-#     True
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> delete_middle(notes)
+    >>> notes == ['Do', 'Re', 'Ti', 'Do']
+    True
 
-#     """
-
-#     pass
-
+    """
+    notes = input_list
+    notes[2:-2] = []
+    
+    return
+    
+delete_middle(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'])
 
 # # This is the part were we actually run the doctests.
 
