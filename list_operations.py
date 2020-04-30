@@ -160,24 +160,26 @@ def replace_third_and_last(input_list):
     # pass
 replace_third_and_last([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
-# def replace_middle(input_list):
-#     """Replace all elements of a list but the first two and last two with 42 and 37.
+def replace_middle(input_list):
+    """Replace all elements of a list but the first two and last two with 42 and 37.
 
-#     After the replacement, 42 and 37 should appear in that order in input_list.
+    After the replacement, 42 and 37 should appear in that order in input_list.
 
-#     Return nothing.
+    Return nothing.
 
-#     For example:
+    For example:
 
-#     >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-#     >>> replace_middle(multiples)
-#     >>> multiples == [0, 3, 42, 37, 24, 27]
-#     True
+    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    >>> replace_middle(multiples)
+    >>> multiples == [0, 3, 42, 37, 24, 27]
+    True
+    """
 
-#     """
+    multiples = input_list
+    multiples[2:-2] = [42, 37]
+    return
 
-#     pass
-
+replace_middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
 # def delete_third_and_seventh(input_list):
 #     """Remove third and seventh elements of input_list and return nothing.
