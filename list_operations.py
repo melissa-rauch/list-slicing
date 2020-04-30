@@ -45,21 +45,22 @@ def top(input_list):
     """
 
     return input_list[:-1]
-    
+
 top(['Jan', 'Feb', 'Mar'])
 
-# def first_three(input_list):
-#     """Return the first three elements of the input list.
+def first_three(input_list):
+    """Return the first three elements of the input list.
 
-#     For example:
+    For example:
 
-#     >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-#     ['Jan', 'Feb', 'Mar']
+    >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
+    ['Jan', 'Feb', 'Mar']
 
-#     """
+    """
 
-#     return []
+    return input_list[:3]
 
+first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
 
 # def last_five(input_list):
 #     """Return the last five elements of the input list.
