@@ -104,21 +104,22 @@ def inner_four(input_list):
 
 inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
-# def inner_four_end(input_list):
-#     """Return the elements that are 6th, 5th, 4th, and 3rd from the end of input_list.
+def inner_four_end(input_list):
+    """Return the elements that are 6th, 5th, 4th, and 3rd from the end of input_list.
 
-#     This function should return those elements in a list, in the exact order
-#     described above.
+    This function should return those elements in a list, in the exact order
+    described above.
 
-#     For example:
+    For example:
 
-#     >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [12, 15, 18, 21]
+    >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [12, 15, 18, 21]
 
-#     """
+    """
 
-#     return []
+    return input_list[4:-2]
 
+inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
 # def replace_head(input_list):
 #     """Replace the head of input_list with the value 42 and return nothing.
