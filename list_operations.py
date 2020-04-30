@@ -62,18 +62,19 @@ def first_three(input_list):
 
 first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
 
-# def last_five(input_list):
-#     """Return the last five elements of the input list.
+def last_five(input_list):
+    """Return the last five elements of the input list.
 
-#     For example:
+    For example:
 
-#     >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [15, 18, 21, 24, 27]
+    >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [15, 18, 21, 24, 27]
 
-#     """
+    """
 
-#     return []
+    return input_list[-5:]
 
+last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
 # def middle(input_list):
 #     """Return all elements of input_list except the first two and the last two.
