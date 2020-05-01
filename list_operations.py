@@ -30,7 +30,7 @@ def last(input_list):
     'Mar'
 
     """
-    return input_list[:-2:-1]
+    return input_list[-1]
 
 last(['Jan', 'Feb', 'Mar'])
 
@@ -153,10 +153,11 @@ def replace_third_and_last(input_list):
 
     """
     multiples = input_list
-    multiples[2:4] = [37]
-    multiples [:-2:-1] = [37]
+    multiples[2] = 37
+    multiples[-1] = 37
 
     return
+
     # pass
 replace_third_and_last([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
@@ -221,11 +222,26 @@ def delete_middle(input_list):
     
 delete_middle(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'])
 
-# # This is the part were we actually run the doctests.
+# This is the part were we actually run the doctests.
 
-# if __name__ == '__main__':
-#     import doctest
+if __name__ == '__main__':
+    import doctest
 
-#     result = doctest.testmod()
-#     if result.failed == 0:
-#         print('ALL TESTS PASSED')
+    result = doctest.testmod()
+    if result.failed == 0:
+        print('ALL TESTS PASSED')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
